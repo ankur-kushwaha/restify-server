@@ -5,7 +5,7 @@
 {
   server: {
     port: 8000,
-    cluster: true
+    cluster: false
   },
   logging: {
     dir: "logs",

@@ -1,24 +1,27 @@
 {
-  "name":    "restify-server",
+  "name": "modular-node",
   "version": "0.0.0",
   "private": true,
-  "main":    "server.js",
+  "main": "server.js",
   "scripts": {
-    "start":  "./node_modules/.bin/forever start --append -o ./forever.log -e ./forever.log server.js",
-    "stop":   "./node_modules/.bin/forever stop server.js",
+    "start": "./node_modules/.bin/forever start --append -o ./forever.log -e ./forever.log server.js",
+    "stop": "./node_modules/.bin/forever stop server.js",
     "status": "./node_modules/.bin/forever list",
-    "test":   "./node_modules/.bin/mocha -R spec test/server.js test/**/*.js"
+    "test": "./node_modules/.bin/mocha -R spec test/server.js test/**/*.js"
   },
   "dependencies": {
+    "bunyan": "^1.4.0",
+    "change-case": "^2.3.1",
+    "config": "^1.14.0",
+    "forever": "^0.14.1",
+    "json5": "^0.4.0",
+    "promise": "^7.1.1",
     "restify": "^3.0.3",
-    "bunyan":  "^1.4.0",
-    "config":  "^1.14.0",
-    "json5":   "^0.4.0",
-    "forever": "^0.14.1"
+    "restify-router": "^0.2.1"
   },
   "devDependencies": {
-    "mocha":     "^2.2.5",
-    "chai":      "^3.0.0",
+    "mocha": "^2.2.5",
+    "chai": "^3.0.0",
     "supertest": "^1.0.1",
     "bunyan-prettystream": "hadfieldn/node-bunyan-prettystream"
   },

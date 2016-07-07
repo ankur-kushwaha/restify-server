@@ -1,8 +1,8 @@
-# restify-server
+# modular-node
 
 This project was generated using [yo restify-server generator](
 https://github.com/vsimonian/generator-restify-server) version
-0.1.1.
+0.0.0.
 
 ## What's included
 
